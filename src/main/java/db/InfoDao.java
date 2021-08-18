@@ -1,12 +1,12 @@
 package db;
 
 import io.dropwizard.hibernate.AbstractDAO;
-import models.Info;
+import models.InfoModel;
 import org.hibernate.SessionFactory;
 
 import java.util.List;
 
-public class InfoDao extends AbstractDAO<Info> {
+public class InfoDao extends AbstractDAO<InfoModel> {
     /**
      * Creates a new DAO with a given session provider.
      *
@@ -16,7 +16,7 @@ public class InfoDao extends AbstractDAO<Info> {
         super(sessionFactory);
     }
 
-    public List<Info> findAll() {
+    public List<InfoModel> findAll() {
         return list(namedTypedQuery("com.wordpress.nullpointerexception1.info.findAll"));
     }
 }

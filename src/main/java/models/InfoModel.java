@@ -6,9 +6,9 @@ import javax.persistence.*;
 @Table(name = "info")
 @NamedQueries({
         @NamedQuery(name = "com.wordpress.nullpointerexception1.info.findAll",
-                query = "select e from Info e")
+                query = "select e from InfoModel e")
 })
-public class Info {
+public class InfoModel {
     @Column(name = "name")
     private String name;
 
