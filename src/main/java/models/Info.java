@@ -8,7 +8,7 @@ import javax.persistence.*;
         @NamedQuery(name = "com.wordpress.nullpointerexception1.info.findAll",
                 query = "select e from Info e")
 })
-public class info {
+public class Info {
     @Column(name = "name")
     private String name;
 
